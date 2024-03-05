@@ -12,7 +12,6 @@ const Head = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log("🚀 ~ Head ~ searchQuery:", searchQuery);
     // make an api call after key press
     // but if the differace between 2 API call is <200
     // decline the API calls
