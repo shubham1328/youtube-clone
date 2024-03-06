@@ -16,9 +16,9 @@ const VideoContainer = () => {
     setVideos(json.items);
   }
   return (
-    <div className='flex flex-wrap'>
+    <div className='flex flex-wrap h-[100%]'>
       {videos.map((video) => 
-        <Link key={video.id} to={"/watch?v="+video.id}><VideoCard key={video.id} info={video}/></Link>
+        <Link className='py-2' key={video.id} to={"/watch?v="+video.id}><VideoCard key={video.id} info={video}/></Link>
       )}
     </div>
   )
